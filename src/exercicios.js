@@ -210,3 +210,27 @@ console.log('O usuario ' + usuario + ' possui ' + idade + ' anos');
 // utilizando Template Literals:
 console.log(`O usuário ${usuario} possui ${idade} anos`);
 */
+
+
+////////////////////Exercicio 7
+//Utilize a sintaxe curta de objetos (Object Short Syntax) no seguinte objeto:
+
+/*
+const nome = 'Diego';
+const idade = 23;
+
+const usuario = {
+ nome: nome,
+ idade: idade,
+ cidade: 'Rio do Sul',
+};
+
+//Utilizando Object Short Syntax
+const usuarioObject = {
+    nome,
+    idade,
+    cidade: 'Rio do Sul',
+   };
+
+console.log(usuarioObject.nome, usuarioObject.idade);
+*/

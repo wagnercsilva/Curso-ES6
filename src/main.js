@@ -1,5 +1,4 @@
 ///////////////// CLASSES /////////////////
-
 /*
 class List{
     constructor() {
@@ -33,6 +32,7 @@ document.getElementById('novoTodo').onclick = function(){
 
 MinhaLista.mostraUsuario();
 */
+
 ///////////////// OPERAÇÔES EM ARRAYS /////////////////
 
 /*
@@ -66,8 +66,8 @@ const find = arr.find(function(item) {
 
 console.log(find);
 */
-///////////////// ARROW FUNCTIONS /////////////////
 
+///////////////// ARROW FUNCTIONS /////////////////
 /*
 const arr =  [1,3,4,5,8,10];
 
@@ -87,6 +87,7 @@ const teste = () => ({nome: 'Wagner'});
 
 console.log(teste());
 */
+
 ///////////////// VALORES PADRÃO PARA OS PARAMETROS DAS FUNCOES /////////////////
 
 /*
@@ -104,8 +105,8 @@ const somaArrow = (a = 0, b = 0) => a + b;
 console.log(somaArrow(1));
 console.log(somaArrow());
 */
-///////////////// DESESTRUTURAÇÃO /////////////////
 
+///////////////// DESESTRUTURAÇÃO /////////////////
 /*
 const usuario = {
     nome: 'Wagner',
@@ -129,8 +130,8 @@ function mostraNome({ nome, idade}) {
 
 mostraNome(usuario);
 */
-///////////////// OPERADORES REST/SPREAD /////////////////
 
+///////////////// OPERADORES REST/SPREAD /////////////////
 /*
 //REST resto das propriedade
 const usuario = {
@@ -182,8 +183,8 @@ const usuario2 = {...usuario1, nome: 'Wagner Alterado' };
 console.log(usuario1);
 console.log(usuario2);
 */
-///////////////// TEMPLATES LITERALS /////////////////
 
+///////////////// TEMPLATES LITERALS /////////////////
 /*
 //Incluir variaveis dentro de String no js a partir do ES6
 const nome = "Wagner";
@@ -193,8 +194,8 @@ console.log("Meu nome eh " + nome + " e tenho " + idade + " anos");
 
 console.log(`Meu Nome eh ${nome} e tenho ${idade} anos`);
 */
-///////////////// OBJECT SHORT SYNTAX /////////////////
 
+///////////////// OBJECT SHORT SYNTAX /////////////////
 /*
 const nome = "Wagner";
 const idade = 24;
@@ -208,4 +209,28 @@ const usuario = {
 
 console.log(usuario);
 */
-"use strict";
+
+/*
+import { soma as somaFunction, sub } from './funcoes';
+
+//ou todas
+//import * as funcoes from './funcoes'; e usar funcoes.soma
+
+console.log(somaFunction(1,2));
+
+console.log(sub(1,2));
+*/
+
+
+////////////Exercícios: Módulo 02
+/*
+import { idade } from './functions';
+console.log(idade);
+
+import ClasseUsuario from './functions';
+ClasseUsuario.info();
+
+import teste, {idade as idadeUsuario} from './functions';
+teste.info();
+console.log(idadeUsuario);
+*/
