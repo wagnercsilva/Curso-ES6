@@ -1,11 +1,58 @@
 <html>
     <head>
         <title>Curso ES6</title>
+
+        <style>
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+
+            li {
+                clear: both;
+                margin-top: 20px;
+            }
+
+            img {
+                width: 80px;
+                float: left;
+                margin-right: 10px;
+            }
+
+            strong {
+                font-size: 20px;
+            }
+
+            p {
+                margin: 5px 0;
+            }
+        </style>
     </head>
+
     <body>
-        <button id="novoTodo">Adicionar</button>
+        <form id="repo-form" action="">
+            <input type="text" name="repository"/>
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <ul id="repo-list">
+            <li>
+                <img src="https://avatars0.githubusercontent.com/u/28929274?v=4"/>
+                <strong>rocketseat.com.br</strong>
+                <p>Tire a sua ideia do papel e de vida a sua startup</p>
+                <a target="_blank" href="http:/github.com/rocketseat/rocketseat.com.br">Acessar</a>
+            </li>
+            <li>
+                <img src="https://avatars0.githubusercontent.com/u/28929274?v=4"/>
+                <strong>rocketseat.com.br</strong>
+                <p>Tire a sua ideia do papel e de vida a sua startup</p>
+                <a target="_blank" href="http:/github.com/rocketseat/rocketseat.com.br">Acessar</a>
+            </li>
+        </ul>
         
         <script src="./bundle.js"></script>
-        <script src="./bundleExercicios.js"></script>
+        <!-- <script src="./bundleExercicios.js"></script> -->
     </body>
 </html>

@@ -234,3 +234,99 @@ const usuarioObject = {
 
 console.log(usuarioObject.nome, usuarioObject.idade);
 */
+
+
+
+////////////Exercícios: Módulo 02////////////
+
+/*
+import { idade } from './functions';
+console.log(idade);
+
+import ClasseUsuario from './functions';
+ClasseUsuario.info();
+
+import teste, {idade as idadeUsuario} from './functions';
+teste.info();
+console.log(idadeUsuario);
+*/
+
+/*import axios from 'axios';
+
+function getUserFromGithub(user) {
+    axios.get(`https://api.github.com/users/${user}`)
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(err => {
+            console.log('Usuário não existe');
+        })
+}
+
+async function executaPromisse(){
+    await getUserFromGithub('diego3g');
+    await getUserFromGithub('diego3g124123');
+}
+
+executaPromisse().then();
+*/
+
+
+
+/*
+// Funão delay aciona o .then após 1s
+const delay = () => new Promise(resolve => setTimeout(resolve('teste'), 1000));
+
+async function umPorSegundo() {
+    const resp = await delay();
+    console.log('1 sec');
+    
+    await delay();
+    console.log('2 sec');
+
+    await delay();
+    console.log('3 sec');
+}
+
+umPorSegundo().then();
+*/
+
+/*
+import axios from 'axios';
+
+class Github {
+    static getRepositories(repo) {
+    axios.get(`https://api.github.com/repos/${repo}`)
+    .then(response => {
+    console.log(response.data);
+    })
+    .catch(err => {
+    console.log('Repositório não existe');
+
+     })
+    }
+}
+
+async function buscarepositorio(){
+   await Github.getRepositories('rocketseat/rocketseat.com.br');
+   await Github.getRepositories('rocketseat/dslkvmskv');
+}
+
+buscarepositorio().then();
+*/
+
+/*
+import axios from 'axios';
+
+const buscaUsuario = async user => {
+    axios.get(`https://api.github.com/users/${user}`)
+        .then(response => {
+        console.log(response.data);
+    })
+        .catch(err => {
+        console.log('Usuário não existe');
+    });
+}
+
+buscaUsuario('diego3g').then;
+/*

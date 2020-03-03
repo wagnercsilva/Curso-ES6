@@ -221,16 +221,33 @@ console.log(somaFunction(1,2));
 console.log(sub(1,2));
 */
 
+class App{
+    constructor() {
+        this.repositories = [];
 
-////////////Exercícios: Módulo 02
-/*
-import { idade } from './functions';
-console.log(idade);
+        this.formEl = document.getElementById('repo-form');
 
-import ClasseUsuario from './functions';
-ClasseUsuario.info();
+        this.registerHandlers();
+    }
 
-import teste, {idade as idadeUsuario} from './functions';
-teste.info();
-console.log(idadeUsuario);
-*/
+    registerHandlers() {
+        this.formEl.onsubmit = event => this.addRepository(event);
+    }
+
+    addRepository(event) {
+        event.preventDefault();
+
+        this.repositories.push({
+            name: 'rocketseat.com.br',
+            description: 'Tire a sua ideia do papel e dê vida a sua startup',
+            avatar_url: 'https://avatars0.githubusercontent.com/u/28929274?v=4',
+            html_url: 'http:/github.com/rocketseat/rocketseat.com.br'
+        });
+
+        console.log(this.repositories);
+    }
+}
+
+new App();
+
+
